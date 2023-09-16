@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CARA DAPAT UANG TERBARU 2023</title>
+    <!-- Tambahkan tautan Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Tambahkan tautan Particle.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <style>
+        /* Gaya untuk menempatkan tombol di tengah partikel */
+        #particles-js {
+            position: relative;
+            height: 100vh; /* Setting tinggi sesuai dengan tinggi layar */
+        }
+
+        .centered-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Gaya untuk modal fullscreen */
+        .modal-fullscreen {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Gaya untuk latar belakang hitam saat modal aktif */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        .modal-open .modal {
+            background-color:black;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Partikel menggunakan Particle.js -->
+    <div id="particles-js"></div>
+
+    <!-- Tombol ditempatkan di tengah partikel -->
+    <button class="btn btn-danger btn-lg centered-button" onclick="tampilkanPopup()">APLIKASI CARA DAPAT UANG TERBARU<br>KLIK DISINI!</button>
+
+    <!-- Popup menggunakan modal Bootstrap -->
+    <div class="modal" id="popupModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1 class="text-center">PINJAM DULU SERATUS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tambahkan tautan Bootstrap JavaScript (jQuery dan Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Inisialisasi Particle.js -->
+    <script>
+        particlesJS("particles-js", {
+            // Konfigurasi Particle.js
+            particles: {
+                number: { value: 500, density: { enable: true, value_area: 800 } },
+                color: { value: "#000" },
+                shape: { 
+                    type: "image", // Jenis partikel diganti menjadi "image"
+                    image: { src: "https://images.pexels.com/photos/8719570/pexels-photo-8719570.jpeg?cs=srgb&dl=pexels-ahsanjaya-8719570.jpg&fm=jpg", width: 100, height: 100 } // Ganti URL dengan URL gambar uang
+                },
+                opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+                size: { value: 50, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+                line_linked: { enable: true, distance: 150, color: "#000", opacity: 0.4, width: 1 },
+                move: {
+                    enable: true,
+                    speed: 3,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+            },
+            retina_detect: true
+        });
+
+        function tampilkanPopup() {
+            $('body').addClass('modal-open');
+            $('#popupModal').modal('show');
+        }
+
+        function tutupPopup() {
+            $('body').removeClass('modal-open');
+            $('#popupModal').modal('hide');
+        }
+    </script>
+</body>
+</html>
